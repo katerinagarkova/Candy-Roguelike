@@ -1,0 +1,39 @@
+[gd_scene load_steps=3 format=3 uid="uid://ba4su2y72q5s1"]
+
+[ext_resource type="PackedScene" uid="uid://beve5cgb52byp" path="res://player.tscn" id="1_nwwui"]
+[ext_resource type="PackedScene" uid="uid://dtgncxouuio2f" path="res://pinetree.tscn" id="2_7px58"]
+
+[node name="Game" type="Node2D"]
+y_sort_enabled = true
+
+[node name="ColorRect" type="ColorRect" parent="."]
+offset_left = -7.0
+offset_top = 14.0
+offset_right = 1982.0
+offset_bottom = 1113.0
+
+[node name="CharacterBody2D" parent="." instance=ExtResource("1_nwwui")]
+position = Vector2(759, 649)
+
+[node name="trees" type="Node" parent="."]
+
+[node name="StaticBody2D" parent="trees" instance=ExtResource("2_7px58")]
+position = Vector2(431, 673)
+
+[node name="StaticBody2D2" parent="trees" instance=ExtResource("2_7px58")]
+position = Vector2(814, 930)
+
+[node name="StaticBody2D3" parent="trees" instance=ExtResource("2_7px58")]
+position = Vector2(1363, 285)
+
+[node name="StaticBody2D4" parent="trees" instance=ExtResource("2_7px58")]
+position = Vector2(1318, 391)
+
+[node name="StaticBody2D5" parent="trees" instance=ExtResource("2_7px58")]
+position = Vector2(1439, 361)
+
+[node name="StaticBody2D6" parent="trees" instance=ExtResource("2_7px58")]
+position = Vector2(1424, 804)
+
+[node name="StaticBody2D7" parent="trees" instance=ExtResource("2_7px58")]
+position = Vector2(768, 260)
